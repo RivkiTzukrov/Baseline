@@ -8,7 +8,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        SumOfDigits();
+        GenerateInt();
     }
 
     // 2
@@ -96,9 +96,7 @@ class Program
         // I made conditions to validate the input
         if (parsed && num >= 0.0)
         {
-            string n = ((decimal)num - (int)num).ToString().Substring(2);
-            int result = Int16.Parse(n);
-            Console.WriteLine(result);
+            Console.WriteLine((int)num);
         }
         else
         {
