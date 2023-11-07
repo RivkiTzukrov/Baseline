@@ -1,0 +1,33 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int z = 0;
+        int y = 14;
+        while (!func(y))
+        {
+            z = ++y;
+        }
+
+        Console.WriteLine($"{z} is a prime number.");
+    }
+
+    static bool func(int n)
+    {
+        int c = 2;
+
+        while (c < n)
+        {
+            if (n % c == 0)
+            {
+                return false;
+            }
+
+            c++;
+        }
+
+        return true;
+    }
+}
